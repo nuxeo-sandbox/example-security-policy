@@ -1,0 +1,9 @@
+Bundle-ActivationPolicy: lazy
+Bundle-ClassPath: .
+Manifest-Version: 1.0
+Bundle-Vendor: org.nuxeo.security.policy
+Bundle-Version: 1.0.0
+Bundle-Name: security-policy-core
+Bundle-ManifestVersion: 2
+Bundle-SymbolicName: org.nuxeo.security.policy.core;singleton=true
+Nuxeo-Component: OSGI-INF/security-policy-contrib.xml
