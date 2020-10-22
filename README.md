@@ -2,6 +2,12 @@
 
 Example security policy package for the Nuxeo Repository.
 
+## Use Case
+
+The example security policy uses a metadata field to control access to the underlying document.  In this example, we expect the "dc:description" / Description field to be either blank (normal security rules apply) or the value `RestrictedView` (the security policy applies).  When set to `RestrictedView`, the User must be in either group "GroupOne" or "GroupTwo" in order to see the document.  If they are not, the document is forbidden from view.
+
+Caution: When the description is set to a value other than `RestrictedView`, no one will be able to see the document for this particular example.  In a production use case, you would use a field other than `dc:description` and would most likely have a drop-down select field for the possible values of the `ACCOUNT_TYPE` metadata field defined in `ExamplePolicy.java`.
+
 ## Support
 
 **These features are sand-boxed and not yet part of the Nuxeo Production platform.**
